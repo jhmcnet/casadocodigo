@@ -22,7 +22,7 @@ public class Product {
 	private String description;
 	private int pages;
 	@ElementCollection
-	private List<Price> prices = new ArrayList<>();
+	private List<Price> prices = new ArrayList<Price>();
 	
 	public String getTitle() {
 		return title;
@@ -41,6 +41,12 @@ public class Product {
 	}
 	public void setPages(int pages) {
 		this.pages = pages;
+	}
+	public List<Price> getPrices() {
+		return prices;
+	}
+	public void setPrices(List<Price> prices) {
+		this.prices = prices;
 	}
 	
 
