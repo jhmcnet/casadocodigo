@@ -33,9 +33,9 @@ public class JPAConfiguration {
 	public DataSource dataSource(Environment environment) {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://mariadb:3306/MYSQL_DATABASE");
-		dataSource.setUsername("MYSQL_USER");
-		dataSource.setPassword("MYSQL_PASSWORD");
+		dataSource.setUrl("jdbc:mysql://mariadb:3306/${MYSQL_DATABASE}");
+		dataSource.setUsername("${MYSQL_USER}");
+		dataSource.setPassword("${MYSQL_PASSWORD}");
 		return dataSource;
 	}
 		
