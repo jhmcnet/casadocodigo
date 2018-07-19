@@ -1,0 +1,4 @@
+# Para arquivos Java compilados
+*.class
+# Para código C
+*.so
